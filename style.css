@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+	--font-family: "Ubuntu", sans-serif;
+	--font-size: 16px;
+	--font-small: 13px;
+	--spacer: 25px;
+	--spacer-M: calc(var(--spacer) * 1.5);
+	--spacer-L: calc(var(--spacer) * 2);
+	--spacer-XL: calc(var(--spacer) * 3);
+	--spacer-XXL: calc(var(--spacer) * 4);
+	--secondary: #dfe9c1;
+	--primary: #7287ae;
+	--acctent: #f2ce94;
+	--light: #ffffff;s
+}
