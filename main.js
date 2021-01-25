@@ -1,4 +1,5 @@
 //Burger menu
+
 const navSlide = () => {
 	const burger = document.querySelector(".burger");
 	const nav = document.querySelector(".nav-links");
@@ -41,4 +42,13 @@ $(".owl-carousel").owlCarousel({
 			items: 3,
 		},
 	},
+});
+
+$(window).scroll(function () {
+	if ($("#blog1").visible()) {
+		$("body").addClass("newBG");
+		$("#blog1").addClass("remove");
+	} else {
+		$("body").removeClass("newBG");
+	}
 });

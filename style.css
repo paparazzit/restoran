@@ -27,6 +27,7 @@ body {
 	width: 100%;
 	background-color: var(--secondary);
 	overflow-x: hidden;
+	transition: 1s all ease-in;
 }
 
 .container {
@@ -43,6 +44,9 @@ body {
 	border: 2px solid var(--primary);
 	color: white;
 	cursor: pointer;
+}
+.newBG {
+	background-color: #fc8f50 !important;
 }
 
 /******* Nav ********/
@@ -203,14 +207,21 @@ p.price {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.blog article {
+
+.blog article .blog-article {
 	background-color: white;
 	display: flex;
 
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 30px;
+	transform: translateX(-150%);
 }
+.remove {
+	transform: translateX(0%) !important;
+	transition: 2s all ease-in-out;
+}
+
 .featured-img {
 	flex: 0 0 30%;
 }
@@ -361,6 +372,29 @@ footer .container article a {
 footer p.copy {
 	text-align: center;
 	padding: 30px 0;
+}
+
+/* menu */
+.menu {
+	padding: 100px 0;
+}
+.menu h2 {
+	text-align: center;
+	font-size: 4.5rem;
+	font-weight: 600;
+	color: var(--primary);
+	letter-spacing: 2px;
+	margin-bottom: 100px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.menu .container .row article {
+	flex: 0 0 33%;
+	padding: 30px;
 }
 @media (max-width: 890px) {
 }
