@@ -1,0 +1,1 @@
+butter.init({ cancelOnTouch: true });
